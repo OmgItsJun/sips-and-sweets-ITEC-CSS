@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Outbound Transaction</title>
+      
+    </head>
+<style>
+	body {
+	 background-color: #ffe5ec;
+	}
+	
+	.box {
+		width:1200px;
+		height: 50px;
+		border: 2px solid black; 
+		padding: 5px;
+		margin: 1px;
+	}
+	</style>
+<center>
+		
+                <h1>Outbound Transaction</h1>
+            </center>
+			            <table border="4" width="100%" height="500">
+            <tr>
+				<th>Requested By</th>
+				<th>Item Name</th>
+				<th>Quantity</th>
+				<th>Recipient of the Item</th>
+				<th>Request Date</th>
+				<th>Mode of Payment</th>
+				<th>Status</th>
+			</tr>
+			<tr>
+			<td align="center"><select id="reqby" name="reqby">
+                   <option value="karen">Karen</option>
+                    <option value="jp">Jp</option>
+                    <option value="richard">Richard</option>
+                    <option value="rap">Rap</option>
+                    <option value="kean">Kean</option>
+			</select>
+                </td>
+				<td align="center"><select id="name" name="name">
+                    <option value="milk">Milk</option>
+                    <option value="potatoe">Potatoes</option>
+                    <option value="pearl">Pearl</option>
+                    <option value="hotdog">Hotdogs</option>
+                    <option value="bread">Bread</option>
+                    <option value="pork">Pork</option>
+                    <option value="flour">Flour</option>
+                    <option value="cheese">Cheese Powder</option>
+			</select>
+				<td align="center"><select id="quantity" name="quantity">
+                    <option value="quantity">10kg</option>
+                    <option value="quantity">20kg</option>
+                    <option value="quantity">30kg</option>
+                    <option value="quantity">40kg</option>
+                    <option value="quantity">50kg</option>
+			</select>
+				<td align="center"><select id="name" name="name">
+                   <option value="ruel">Ruel</option>
+                    <option value="sei">Sei</option>
+                    <option value="jonah">Jonah</option>
+                    <option value="gelo">Gelo</option>
+                    <option value="jeremy">Jeremy</option>
+			</select>
+				<td align="center">
+                    <input type="date" id="date" name="date" placeholder="03/26/02"required>
+                </td>
+				<td align="center"><select id="mode of payment" name="mode of payment">
+                    <option value="Cash">Cash</option>
+                    <option value="Debit cards">Debit cards</option>
+                    <option value="Credit cards">Credit cards</option>
+                    <option value="Online payments">Online payments</option>
+                    </select>
+                </td>
+				 <td align="center"><select id="name" name="name">
+                    <option value="Info received ">Info received</option>
+                    <option value="Collection request dispatched to courier ">Collection request dispatched to courier</option>
+                    <option value="Driver’s Pick-up">Driver’s Pick-up</option>
+                    <option value="Shipment departed from the facility">Shipment departed from the facility</option>
+                    <option value="In transit">In transit</option>
+                    <option value="Hub scan =">Hub scan</option>
+                    <option value="Consolidation scan">Consolidation scan</option>
+                    <option value="System return">System return</option>
+                    <option value="In customs clearance">In customs clearance</option>
+                    <option value="Inbound">Inbound</option>
+                    <option value="Shipment ready for dispatch from a warehouse">Shipment ready for dispatch from a warehouse</option>
+                    <option value="Out for delivery">Out for delivery</option>
+                    <option value="Delivered">Delivered</option>
+                </select>
+                </td> 
+            </tr>
+			<tr>
+			<td align="center"><select id="reqby" name="reqby">
+                   <option value="karen">Karen</option>
+                    <option value="jp">Jp</option>
+                    <option value="richard">Richard</option>
+                    <option value="rap">Rap</option>
+                    <option value="kean">Kean</option>
+			</select>
+                </td>
+				<td align="center"><select id="name" name="name">
+                    <option value="milk">Milk</option>
+                    <option value="potatoe">Potatoes</option>
+                    <option value="pearl">Pearl</option>
+                    <option value="hotdog">Hotdogs</option>
+                    <option value="bread">Bread</option>
+                    <option value="pork">Pork</option>
+                    <option value="flour">Flour</option>
+                    <option value="cheese">Cheese Powder</option>
+			</select>
+				<td align="center"><select id="quantity" name="quantity">
+                    <option value="quantity">10kg</option>
+                    <option value="quantity">20kg</option>
+                    <option value="quantity">30kg</option>
+                    <option value="quantity">40kg</option>
+                    <option value="quantity">50kg</option>
+			</select>
+				<td align="center"><select id="name" name="name">
+                   <option value="ruel">Ruel</option>
+                    <option value="sei">Sei</option>
+                    <option value="jonah">Jonah</option>
+                    <option value="gelo">Gelo</option>
+                    <option value="jeremy">Jeremy</option>
+			</select>
+				<td align="center">
+                    <input type="date" id="date" name="date" placeholder="03/26/02"required>
+                </td>
+				<td align="center"><select id="mode of payment" name="mode of payment">
+                    <option value="Cash">Cash</option>
+                    <option value="Debit cards">Debit cards</option>
+                    <option value="Credit cards">Credit cards</option>
+                    <option value="Online payments">Online payments</option>
+                    </select>
+                </td>
+				 <td align="center"><select id="name" name="name">
+                    <option value="Info received ">Info received</option>
+                    <option value="Collection request dispatched to courier ">Collection request dispatched to courier</option>
+                    <option value="Driver’s Pick-up">Driver’s Pick-up</option>
+                    <option value="Shipment departed from the facility">Shipment departed from the facility</option>
+                    <option value="In transit">In transit</option>
+                    <option value="Hub scan =">Hub scan</option>
+                    <option value="Consolidation scan">Consolidation scan</option>
+                    <option value="System return">System return</option>
+                    <option value="In customs clearance">In customs clearance</option>
+                    <option value="Inbound">Inbound</option>
+                    <option value="Shipment ready for dispatch from a warehouse">Shipment ready for dispatch from a warehouse</option>
+                    <option value="Out for delivery">Out for delivery</option>
+                    <option value="Delivered">Delivered</option>
+                </select>
+                </td> 
+            </tr>
+			<tr>
+			<td align="center"><select id="reqby" name="reqby">
+                   <option value="karen">Karen</option>
+                    <option value="jp">Jp</option>
+                    <option value="richard">Richard</option>
+                    <option value="rap">Rap</option>
+                    <option value="kean">Kean</option>
+			</select>
+                </td>
+				<td align="center"><select id="name" name="name">
+                    <option value="milk">Milk</option>
+                    <option value="potatoe">Potatoes</option>
+                    <option value="pearl">Pearl</option>
+                    <option value="hotdog">Hotdogs</option>
+                    <option value="bread">Bread</option>
+                    <option value="pork">Pork</option>
+                    <option value="flour">Flour</option>
+                    <option value="cheese">Cheese Powder</option>
+			</select>
+				<td align="center"><select id="quantity" name="quantity">
+                    <option value="quantity">10kg</option>
+                    <option value="quantity">20kg</option>
+                    <option value="quantity">30kg</option>
+                    <option value="quantity">40kg</option>
+                    <option value="quantity">50kg</option>
+			</select>
+				<td align="center"><select id="name" name="name">
+                   <option value="ruel">Ruel</option>
+                    <option value="sei">Sei</option>
+                    <option value="jonah">Jonah</option>
+                    <option value="gelo">Gelo</option>
+                    <option value="jeremy">Jeremy</option>
+			</select>
+				<td align="center">
+                    <input type="date" id="date" name="date" placeholder="03/26/02"required>
+                </td>
+				<td align="center"><select id="mode of payment" name="mode of payment">
+                    <option value="Cash">Cash</option>
+                    <option value="Debit cards">Debit cards</option>
+                    <option value="Credit cards">Credit cards</option>
+                    <option value="Online payments">Online payments</option>
+                    </select>
+                </td>
+				 <td align="center"><select id="name" name="name">
+                    <option value="Info received ">Info received</option>
+                    <option value="Collection request dispatched to courier ">Collection request dispatched to courier</option>
+                    <option value="Driver’s Pick-up">Driver’s Pick-up</option>
+                    <option value="Shipment departed from the facility">Shipment departed from the facility</option>
+                    <option value="In transit">In transit</option>
+                    <option value="Hub scan =">Hub scan</option>
+                    <option value="Consolidation scan">Consolidation scan</option>
+                    <option value="System return">System return</option>
+                    <option value="In customs clearance">In customs clearance</option>
+                    <option value="Inbound">Inbound</option>
+                    <option value="Shipment ready for dispatch from a warehouse">Shipment ready for dispatch from a warehouse</option>
+                    <option value="Out for delivery">Out for delivery</option>
+                    <option value="Delivered">Delivered</option>
+                </select>
+                </td> 
+            </tr>
+			<tr>
+			<td align="center"><select id="reqby" name="reqby">
+                   <option value="karen">Karen</option>
+                    <option value="jp">Jp</option>
+                    <option value="richard">Richard</option>
+                    <option value="rap">Rap</option>
+                    <option value="kean">Kean</option>
+			</select>
+                </td>
+				<td align="center"><select id="name" name="name">
+                    <option value="milk">Milk</option>
+                    <option value="potatoe">Potatoes</option>
+                    <option value="pearl">Pearl</option>
+                    <option value="hotdog">Hotdogs</option>
+                    <option value="bread">Bread</option>
+                    <option value="pork">Pork</option>
+                    <option value="flour">Flour</option>
+                    <option value="cheese">Cheese Powder</option>
+			</select>
+				<td align="center"><select id="quantity" name="quantity">
+                    <option value="quantity">10kg</option>
+                    <option value="quantity">20kg</option>
+                    <option value="quantity">30kg</option>
+                    <option value="quantity">40kg</option>
+                    <option value="quantity">50kg</option>
+			</select>
+				<td align="center"><select id="name" name="name">
+                   <option value="ruel">Ruel</option>
+                    <option value="sei">Sei</option>
+                    <option value="jonah">Jonah</option>
+                    <option value="gelo">Gelo</option>
+                    <option value="jeremy">Jeremy</option>
+			</select>
+				<td align="center">
+                    <input type="date" id="date" name="date" placeholder="03/26/02"required>
+                </td>
+				<td align="center"><select id="mode of payment" name="mode of payment">
+                    <option value="Cash">Cash</option>
+                    <option value="Debit cards">Debit cards</option>
+                    <option value="Credit cards">Credit cards</option>
+                    <option value="Online payments">Online payments</option>
+                    </select>
+                </td>
+				 <td align="center"><select id="name" name="name">
+                    <option value="Info received ">Info received</option>
+                    <option value="Collection request dispatched to courier ">Collection request dispatched to courier</option>
+                    <option value="Driver’s Pick-up">Driver’s Pick-up</option>
+                    <option value="Shipment departed from the facility">Shipment departed from the facility</option>
+                    <option value="In transit">In transit</option>
+                    <option value="Hub scan =">Hub scan</option>
+                    <option value="Consolidation scan">Consolidation scan</option>
+                    <option value="System return">System return</option>
+                    <option value="In customs clearance">In customs clearance</option>
+                    <option value="Inbound">Inbound</option>
+                    <option value="Shipment ready for dispatch from a warehouse">Shipment ready for dispatch from a warehouse</option>
+                    <option value="Out for delivery">Out for delivery</option>
+                    <option value="Delivered">Delivered</option>
+                </select>
+                </td> 
+            </tr>
+        </table>
+<br>
+<br>
+<br>
+	<center>
+			<a href="SAS_SCM_Edit_Tables.html">GO BACK</a>
+	</center>
+</body>

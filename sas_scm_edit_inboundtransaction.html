@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Inbound Transaction</title>
+      
+    </head>
+<style>
+	body {
+	 background-color: #ffe5ec;
+	}
+	
+	.box {
+		width:1200px;
+		height: 50px;
+		border: 2px solid black; 
+		padding: 5px;
+		margin: 1px;
+	}
+	</style>
+            <center>
+		
+                <h1>Inbound Transaction</h1>
+            </center>
+                <b>Supplier Information:</b><br>
+<div class="box">
+                 <label for="Sname">Supplier name:</label>
+                 <input type="text" id="Sname" name="Sname" placeholder="Supplier name">
+                 <label for="address">Address:</label>
+                 <textarea name="message" colspan="50" placeholder="Address" required>
+                 </textarea> 
+                 <label for="Contact info">Contact no.:</label>
+                 <input type="tel" id="tel" name="tel" placeholder="Contact no.">           
+                 <label for="Product">Product:</label>
+                 <input type="text" id="product" name="product" placeholder="Product">
+</div>
+    <br>
+	<br>            
+            <table border="4" width="100%" height="500">
+            <tr>
+                <th>Item name</th> 
+                <th>Quantity</th>
+                <th>Amount</th>
+                <th>Order by</th>
+                <th>Mode of payment</th>
+                <th>Terms of Payment</th>
+                <th>Order Date</th>
+                <th>Status</th>
+            </tr>
+            <tr>
+                <td align="center"><select id="name" name="name">
+                    <option value="milk">Milk</option>
+                    <option value="potatoe">Potatoes</option>
+                    <option value="pearl">Pearl</option>
+                    <option value="hotdog">Hotdogs</option>
+                    <option value="bread">Bread</option>
+                    <option value="pork">Pork</option>
+                    <option value="flour">Flour</option>
+                    <option value="cheese">Cheese Powder</option>
+			</select>
+                </td>
+                <td align="center"><select id="quantity" name="quantity">
+                    <option value="quantity">10kg</option>
+                    <option value="quantity">20kg</option>
+                    <option value="quantity">30kg</option>
+                    <option value="quantity">40kg</option>
+                    <option value="quantity">50kg</option>
+			</select>
+                </td>
+                <td align="center"><select id="Amount" name="amount">
+                    <option value="amount">1000-3000php</option>
+                    <option value="quantity">3000-6000php</option>
+                    <option value="quantity">6000-9000php</option>
+                    <option value="quantity">9000-12000php</option>
+                    <option value="quantity">12000-15000php</option>
+			</select>
+                </td>
+                <td align="center"><select id="name" name="name">
+                   <option value="ruel">Ruel</option>
+                    <option value="sei">Sei</option>
+                    <option value="jonah">Jonah</option>
+                    <option value="gelo">Gelo</option>
+                    <option value="jeremy">Jeremy</option>
+			</select>
+                </td>
+                <td align="center"><select id="mode of payment" name="mode of payment">
+                    <option value="Cash">Cash</option>
+                    <option value="Debit cards">Debit cards</option>
+                    <option value="Credit cards">Credit cards</option>
+                    <option value="Online payments">Online payments</option>
+                    </select>
+                </td>
+                <td align="center"><select id="terms of payment" name="Terms of payment">
+                    <option value="COD"> Cash on delivery</option>
+                    <option value="net">Payment expected within 90 days</option>
+                    <option value="EOM"> End of month</option>
+                    <option value="pia">Payment in advance</option>
+                    <option value="CBS"> Cash before shipment</option>
+					<option value="CIA">Cash in advance</option>
+                    </select>
+                </td>
+                <td align="center">
+                    <input type="date" id="date" name="date" placeholder="03/26/02"required>
+                </td>
+                <td align="center"><select id="status" name="status">
+                    <option value="received">Received</option>
+                    <option value="pending">Pending</option>
+                    </select>
+                </td> 
+            </tr>
+            <tr>
+                <td align="center"><select id="name" name="name">
+                    <option value="milk">Milk</option>
+                    <option value="potatoe">Potatoes</option>
+                    <option value="pearl">Pearl</option>
+                    <option value="hotdog">Hotdogs</option>
+                    <option value="bread">Bread</option>
+                    <option value="pork">Pork</option>
+                    <option value="flour">Flour</option>
+                    <option value="cheese">Cheese Powder</option>
+			</select>
+                </td>
+                <td align="center"><select id="quantity" name="quantity">
+                    <option value="quantity">10kg</option>
+                    <option value="quantity">20kg</option>
+                    <option value="quantity">30kg</option>
+                    <option value="quantity">40kg</option>
+                    <option value="quantity">50kg</option>
+			</select>
+                </td>
+                <td align="center"><select id="Amount" name="amount">
+                    <option value="amount">1000-3000php</option>
+                    <option value="quantity">3000-6000php</option>
+                    <option value="quantity">6000-9000php</option>
+                    <option value="quantity">9000-12000php</option>
+                    <option value="quantity">12000-15000php</option>>
+			</select>
+                </td>
+                <td align="center"><select id="name" name="name">
+                    <option value="ruel">Ruel</option>
+                    <option value="sei">Sei</option>
+                    <option value="jonah">Jonah</option>
+                    <option value="gelo">Gelo</option>
+                    <option value="jeremy">Jeremy</option></select>
+                </td>
+                <td align="center"><select id="mode of payment" name="mode of payment">
+                    <option value="Cash">Cash</option>
+                    <option value="Debit cards">Debit cards</option>
+                    <option value="Credit cards">Credit cards</option>
+                    <option value="Online payments">Online payments</option>
+                    </select>
+                </td>
+                <td align="center"><select id="terms of payment" name="Terms of payment">
+                    <option value="COD"> Cash on delivery</option>
+                    <option value="net">Payment expected within 90 days</option>
+                    <option value="EOM"> End of month</option>
+                    <option value="pia">Payment in advance</option>
+                    <option value="CBS"> Cash before shipment</option>
+					<option value="CIA">Cash in advance</option>
+                    </select>
+                </td>
+                <td align="center">
+                    <input type="date" id="date" name="date" placeholder="03/26/02"required>
+                </td>
+                <td align="center"><select id="status" name="status">
+                    <option value="received">Received</option>
+                    <option value="pending">Pending</option>
+                    </select>
+                </td> 
+            </tr>
+            <tr>
+                <td align="center"><select id="name" name="name">
+                    <option value="milk">Milk</option>
+                    <option value="potatoe">Potatoes</option>
+                    <option value="pearl">Pearl</option>
+                    <option value="hotdog">Hotdogs</option>
+                    <option value="bread">Bread</option>
+                    <option value="pork">Pork</option>
+                    <option value="flour">Flour</option>
+                    <option value="cheese">Cheese Powder</option>
+			</select>
+                </td>
+                <td align="center"><select id="quantity" name="quantity">
+                   <option value="quantity">10kg</option>
+                    <option value="quantity">20kg</option>
+                    <option value="quantity">30kg</option>
+                    <option value="quantity">40kg</option>
+                    <option value="quantity">50kg</option>
+			</select>
+                </td>
+                <td align="center"><select id="Amount" name="amount">
+                    <option value="amount">1000-3000php</option>
+                    <option value="quantity">3000-6000php</option>
+                    <option value="quantity">6000-9000php</option>
+                    <option value="quantity">9000-12000php</option>
+                    <option value="quantity">12000-15000php</option>
+			</select>
+                </td>
+                <td align="center"><select id="name" name="name">
+                   <option value="ruel">Ruel</option>
+                    <option value="sei">Sei</option>
+                    <option value="jonah">Jonah</option>
+                    <option value="gelo">Gelo</option>
+                    <option value="jeremy">Jeremy</option></select>
+                </td>
+                <td align="center"><select id="mode of payment" name="mode of payment">
+                    <option value="Cash">Cash</option>
+                    <option value="Debit cards">Debit cards</option>
+                    <option value="Credit cards">Credit cards</option>
+                    <option value="Online payments">Online payments</option>
+                    </select>
+                </td>
+                <td align="center"><select id="terms of payment" name="Terms of payment">
+                    <option value="COD"> Cash on delivery</option>
+                    <option value="net">Payment expected within 90 days</option>
+                    <option value="EOM"> End of month</option>
+                    <option value="pia">Payment in advance</option>
+                    <option value="CBS"> Cash before shipment</option>
+					<option value="CIA">Cash in advance</option>
+                    </select>
+                </td>
+                <td align="center">
+                    <input type="date" id="date" name="date" placeholder="03/26/02"required>
+                </td>
+                <td align="center"><select id="status" name="status">
+                    <option value="received">Received</option>
+                    <option value="pending">Pending</option>
+                    </select>
+                </td> 
+            </tr>
+            <tr>
+                <td align="center"><select id="name" name="name">
+                    <option value="milk">Milk</option>
+                    <option value="potatoe">Potatoes</option>
+                    <option value="pearl">Pearl</option>
+                    <option value="hotdog">Hotdogs</option>
+                    <option value="bread">Bread</option>
+                    <option value="pork">Pork</option>
+                    <option value="flour">Flour</option>
+                    <option value="cheese">Cheese Powder</option>
+			</select>
+                </td>
+                <td align="center"><select id="quantity" name="quantity">
+                    <option value="quantity">10kg</option>
+                    <option value="quantity">20kg</option>
+                    <option value="quantity">30kg</option>
+                    <option value="quantity">40kg</option>
+                    <option value="quantity">50kg</option>
+			</select>
+                </td>
+                <td align="center"><select id="Amount" name="amount">
+                    <option value="amount">1000-3000php</option>
+                    <option value="quantity">3000-6000php</option>
+                    <option value="quantity">6000-9000php</option>
+                    <option value="quantity">9000-12000php</option>
+                    <option value="quantity">12000-15000php</option>
+			</select>
+                </td>
+                <td align="center"><select id="name" name="name">
+                    <option value="ruel">Ruel</option>
+                    <option value="sei">Sei</option>
+                    <option value="jonah">Jonah</option>
+                    <option value="gelo">Gelo</option>
+                    <option value="jeremy">Jeremy</option></select>
+                </td>
+                <td align="center"><select id="mode of payment" name="mode of payment">
+                    <option value="Cash
+                    ">Cash</option>
+                    <option value="Checks">Checks</option>
+                    <option value="Debit cards">Debit cards</option>
+                    <option value="Credit cards">Credit cards</option>
+                    <option value="Online payments">Online payments</option>
+                    </select>
+                </td>
+                <td align="center"><select id="terms of payment" name="Terms of payment">
+                    <option value="COD"> Cash on delivery</option>
+                    <option value="net">Payment expected within 90 days</option>
+                    <option value="EOM"> End of month</option>
+                    <option value="pia">Payment in advance</option>
+                    <option value="CBS"> Cash before shipment</option>
+					<option value="CIA">Cash in advance</option>
+                    </select>
+                </td>
+                <td align="center">
+                    <input type="date" id="date" name="date" placeholder="03/26/02"required>
+                </td>
+                <td align="center"><select id="status" name="status">
+                    <option value="received">Received</option>
+                    <option value="pending">Pending</option>
+                    </select>
+                </td>                
+            </tr>
+        </table><br>
+        <center>       
+<br>
+                
+        <a href="SAS_SCM_Edit_Tables.html"> Go Back</a>
+    </center>
+   </body>
+</html>
